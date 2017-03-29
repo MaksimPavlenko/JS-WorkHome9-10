@@ -1,0 +1,89 @@
+	.clearfix:after {  
+		content: "."; 
+		display:block; font-size:0; 
+		line-height:0; 
+		height:0; 
+		clear:both; 
+		visibility:hidden;
+	 }
+	.clearfix { 
+		display:inline-block;
+	 }		
+	.clearfix { 
+		display:block; 
+	}
+/*
+	body {margin:0; background:#FFF url(../img/body.png); -webkit-text-size-adjust:100%; -moz-text-size-adjust:100%; padding:10px 2%; font:14px/24px 'Open Sans', Helvetica, Arial, sans-serif  ; color:#000;}	
+	#wrapper { background:#FFF; width:1200px; margin:0 auto; border:solid 0px #E7E7E7; border-top:5px solid #0088cc; border-radius:6px; box-shadow:0 0 3px rgba(0,0,0,0.2), inset 0 4px 0 #ededed }
+	#header { padding:30px 20px; border-bottom:solid 1px #e0e0e0; margin-bottom:20px; text-align:center; font-family:'Open Sans', sans-serif;}
+	#logo { display:inline-block; font-weight:300;  margin:0 0 0px; font-size:30px; line-height:24px;  color:#000; text-decoration:none; position:relative;  }
+	#logo span{ color:#0088cc;}
+*/	
+	section { 
+		margin-top: 5px;
+		padding-left: 40px
+	}
+	.input{
+		display: inline-block;
+		cursor: pointer;
+		font-size: 14px; 
+		margin-right:20px; 
+		
+		line-height:18px;
+	}
+	.input label{
+		margin-top: -35px;
+	}
+	.input input[type=checkbox]{
+		display: block;
+		margin: 0;
+		padding: 0;
+		margin-top: -15px; 
+	}
+	/*
+	.input input[type=checkbox]:nth-child(2){
+		display: block;
+	}
+	.input input[type=checkbox]:last-child{
+		display: block !important;
+	}
+	*/
+	.input:before{
+		margin-left: 0px;
+		content: "";
+		display: inline-block;
+		width: 18px;
+		height: 0px;
+		vertical-align:middle;
+		text-align: center;
+	}
+	
+	.checkbox {
+		display: inline-block;
+		cursor: pointer;
+		font-size: 14px; 
+		margin-right:10px; 
+		line-height:18px;
+	}
+	input[type=checkbox] {
+	    display:none;
+	}
+	.checkbox:before {
+		margin-left: -10px;
+		content: "";
+		display: inline-block;
+		width: 18px;
+		height: 18px;
+		vertical-align:middle;
+		background-color: #aec2cc;
+		color: #f3f3f3;
+		text-align: center;
+		box-shadow: inset 0px 2px 3px 0px rgba(0, 0, 0, .3), 0px 1px 0px 0px rgba(255, 255, 255, .8);	
+		border-radius: 3px;
+	}
+	input[type=checkbox]:checked + .checkbox:before {
+		content: "\2713";
+		text-shadow: 1px 1px 1px rgba(0, 0, 0, .2);
+		font-size: 15px;
+	}
+	

@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>JS-WorkHome9-10</title>
+		<meta charset="UTF-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link href="css/style.css" rel="stylesheet" type="text/css" />
+		<link href="css/jcarousel-style.css" rel="stylesheet" type="text/css" />
+
+		<link href="css/cusel.css" rel="stylesheet" type="text/css" />
+		<link href="css/checkbox.css" rel="stylesheet" type="text/css" />
+
+		<script src="js/jquery-1.10.2.min.js" type="text/javascript"></script>		
+		<script src="js/script-tabs.js"></script>
+		<script src="js/jquery-tooltip.js"></script>
+
+		<script src="js/modernizr.js"></script>
+
+		<script src="js/cusel/jquery.js"></script>
+		<script src="js/cusel/jquery.mousewheel.js"></script>
+		<script src="js/cusel/jquery-migrate-1.1.1.min.js"></script>
+		<script src="js/cusel/jScrollPane.js"></script>
+		<script src="js/cusel/script-cusel.js"></script>	 
+	</head>
+	
+<body>
+	    <div id="header_top"></div>
+		
+		<div id="header">
+		    <h1>JS-WorkHome9-10</h1>
+			<h2  title="JS-WorkHome9-10" style="">Новостная тематика, IT-технологии</h2>
+
+            <menu id='hmenu'>
+			    <ul class="menu">
+			    <div><a href='#'>Главная</a></div>
+				    <div onmouseover='toggleMenu(event,this)' onmouseout='parentMenuOut(event,this)'>
+					    <a class='subm1'>Новости</a>
+					    <div class='js_submenu' onmouseout='toggleMenu(event,this)'>
+						  	<ul>
+						  		<li><a href=''>Новости21</a></li>
+								<li><a href=''>Новости22</a></li>
+								<li onmouseover='toggleMenu(event,this)' onmouseout='parentMenuOut(event,this)'>
+									<a class='subm0' href='' >Новости23</a>
+									<div class='js_submenu' onmouseout='toggleMenu(event,this)'>
+										<ul>
+											<li onmouseover='toggleMenu(event,this)' onmouseout='parentMenuOut(event,this)'>
+												<a class='subm0' href=''>Новости231</a>
+												<div class='js_submenu' onmouseout='toggleMenu(event,this)'>
+													<ul>
+														<li><a href=''>Новости2311</a></li>
+														<li ><a href=''>Новости2312</a></li>
+														<li ><a href='' >Новости2313</a></li>
+														<li><a href=''>Новости2314</a></li>
+													</ul>
+												</div>
+											</li>
+											<li><a href=''>Новости232</a></li>
+										</ul>
+									</div>	
+								</li>
+								<li><a href=''>Новости24</a></li>
+						  	</ul>
+					    </div>
+				    </div>
+				    <div><a href='#'>Технологии</a></div>
+					<div onmouseover='toggleMenu(event,this)' onmouseout='parentMenuOut(event,this)'>
+				  		<a class='subm1' href=''>Контакты4</a>
+				  		<div class='js_submenu' onmouseout='toggleMenu(event,this)'>
+							<ul>
+								<li><a href=''>Контакты41</a></li>
+								<li><a href=''>Контакты42</a></li>
+								<li><a href=''>Контакты43</a></li>
+							</ul>
+						</div>
+				    </div>
+				</ul>
+            </menu>
+		</div>	
+		<div class="content"  style="max-width: 860px"  >
+
+			<div class="stage-wrapper clearfix">
+		        <div class="stage clearfix">
+		            <div class="stage-container">
+		                <div class="jcarousel-wrapper">
+		                    <div class="jcarousel" data-jcarousel="true">
+		                        <ul class="clearfix" style="transition-duration: 0s; transition-timing-function: ease; transition-property: all; transform: translate3d(0px, 0px, 0px);">
+		                            <li style="width: 748px;"><img src="images/office1.jpg" width="748" height="300" alt=""></li>
+		                            <li style="width: 748px;"><img src="images/office2.jpg" width="748" height="300" alt=""></li>
+		                            <li style="width: 748px;"><img src="images/office3.jpg" width="748" height="300" alt=""></li>
+		                        </ul>
+		                    </div>
+		                    <a href="#" class="jcarousel-control-prev" data-jcarouselcontrol="true">‹</a>
+		                    <a href="#" class="jcarousel-control-next" data-jcarouselcontrol="true">›</a>
+
+		                    <p class="jcarousel-pagination" data-jcarouselpagination="true"><a href="http://sorgalla.com/jcarousel/#1" class="active">1</a><a href="#">2</a><a href="#">3</a></p>
+		                </div>
+		            </div>
+		        </div>
+		    </div>
+			<div class="clear"></div>
+			
+			<div class="lineForm overflow-block">
+				<label></label>
+				<select class="left" id="" name="country" onchange= "onchange_size(this)">
+			  		<option selected="selected" value="">Размер шрифта...</option>
+			  		<option value="1">Размер "1"</option>
+			  		<option value="2">Размер "2"</option>
+			  		<option value="3">Размер "3"</option>
+			  		<option value="4">Размер "4"</option>
+			  		<option value="5">Размер "5"</option>
+			  		<option value="6">Размер "6"</option>
+			  		<option value="7">Размер "7"</option>
+			  		<option value="8">Размер "8"</option>
+			  		<option value="9">Размер "9"</option>
+			  		<option value="10">Размер "10"</option>
+				</select>
+			</div>
+
+			<section id="section_first">
+				<div class="input">
+					<input type="checkbox" >
+					<label class="input" for="option3"> Option 1 </label></br>
+					
+					
+					<input type="checkbox" >
+					<label class="input" for="option3"> Option 2 </label></br>
+					
+					<input type="checkbox" >
+					<label class="input" for="option4"> Option 3 </label></br>
+		
+				</div>
+			</section>	
+			<section id="section_last" style="display: none; background-color: rgba(158, 158, 158, 0.2); border-radius: 6px; padding: 5px 470px 5px 40px;">
+				<form>
+					<input id="option2" type="checkbox" >
+					<label class="checkbox" for="option2"> Option 4 </label></br>
+					
+					<input id="option3" type="checkbox" >
+					<label class="checkbox" for="option3"> Option 5 </label></br>
+					
+					<input id="option4" type="checkbox" >
+					<label class="checkbox" for="option4"> Option 6 </label></br>
+		
+				</form>
+			</section>	
+			<div class="clear"></div>
+		
+				<div>	
+				   <h3 ><strong>Штучний інтелект від Google придумав власний спосіб шифрування</strong></h3>
+				   <p title="text" class="text" id="text">
+						Компания Google открыла в Цюрихе новый исследовательский центр Google Research,
+						который будет заниматься машинным интеллектом. Теперь это один из крупнейших 
+						центров исследований, связанный с разработкой искусственного интеллекта за 
+						пределами США. Его открытие связано с новой стратегией Google, которая 
+						предполагает активное внедрение машинного интеллекта в сервисы и приложения. 
+						Уже сегодня компания использует наработки в этой области в таких продуктах,
+						как Translate и Photos. А на конференции Google I/O 2016 были представлены 
+						мессенджер Allo и устройство умного дома Google Home, в которых также 
+						используется машинный интеллект. С открытием нового исследовательского 
+						центра в Цюрихе, Google планирует совершить значительный прорыв в этой 
+						области. Нам удалось побывать на открытии этого центра и узнать о том, 
+						как и для чего компания разрабатывает искусственный интеллект.
+				   </p>
+				   </br>
+				  
+				   <h3>Как Google создаёт искусственный интеллект?</h3>
+				   <p class="">
+						Открывшийся в Цюрихе исследовательский центр будет заниматься разработкой 
+						в трёх ключевых для искусственного интеллекта областях: машинное обучение, 
+						машинное восприятие, а также обработка и понимание естественной речи.
+						Все они необходимы для того, чтобы создать компьютеры следующего поколения, 
+						которые смогут учиться от людей и окружающего их мира.
+				   </p>	   
+				</div>
+		</div>
+				<div class="clear"></div>
+
+				<div class="fon">
+				    <img src = "images/bg2.jpg" class="" alt="картинка" title="" />
+				</div>
+		     
+				<div class="content" style="max-width: 860px">
+					<h3>Как тренировались нейросети для AlphaGo?</h3>	
+					<p class="text">
+						«Мы начали с данных профессиональных игроков в го. Так как игры в основном 
+						записывают, то у нас было очень много пар: позиция плюс ход, которым она 
+						была достигнута. Одна игра даёт нам где-то 300 таких пар. Каждый ход в такой 
+						игре профессиональный, так как сделан экспертом. Мы использовали «обучение с 
+						учителем», чтобы научить нейросеть предугадывать, какой бы ход сделал 
+						профессиональный игрок в этой позиции. Так была создана «сеть политик». 
+						Дальше мы позволили нейросети играть против себя, причём как с позиции чёрных,
+						так и белых камней. Результат этих игр мы загружали обратно в нейросеть. 
+						Это уже «обучение с подкреплением», оно пока не так хорошо исследовано, 
+						но мы считаем, что это будущее машинного обучения. Дальше, благодаря игре 
+						нейросети против себя самой, мы получили большой объём данных о позиции камней 
+						на доске, а также исходе игр. На их основе мы тренировали «сеть значения», 
+						которая научилась понимать, при каких позициях выигрывают чёрные камни, а при 
+						каких белые. Оценка — это очень важный параметр для создания игровой программы
+						и машинного обучения в целом, ведь вам нужен способ определить прогресс в игре» — рассказывает Тор Грэпель (Thore Graepel), учёный-исследователь в проекте Google DeepMind, который разработал AlphaGo.
+					</p>
+				</div>
+				
+	    <div class="content" style="max-width: 860px">
+			<iframe style="" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2541.867777474236!2d30.532261115175206!3d50.42493509708505!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cf1a98f591a5%3A0xb201d076928c804e!2z0LLRg9C70LjRhtGPINCE0LLQs9C10L3QsCDQmtC-0L3QvtCy0LDQu9GM0YbRjywgMzYsINCa0LjRl9CyLCDQo9C60YDQsNC40L3QsCwgMDExMzM!5e0!3m2!1sru!2sua!4v1489599118522" width="860" height="350" frameborder="0" style="border:0" allowfullscreen>ss		
+			</iframe>
+		</div>
+
+		<div class="content" style="max-width: 860px">
+			<div> 
+				<iframe name="tabs" src="moduli/frame.html" frameborder="0" class="iframe" id="tabs";></iframe>
+			</div>
+			
+			
+			<form class="contact_form" action="#" method="post" name="contact_form" style="">
+		    	<ul>
+
+			        <li>
+			            <label for="name">Name:</label>
+			            <input  type="text"  placeholder="Name" required />
+			            <span class="form_hint">Name</span>
+			        </li>
+			       <li>
+		                <label for="email">Email:</label>
+		                <input type="email" name="email" placeholder="Your email" required />
+		                <span class="form_hint">Your email</span>
+		            </li>		      
+			        <li>
+			            <label for="website">Website:</label>
+			            <input  type="text" name="email" placeholder="Your website" required/>
+			            <span class="form_hint">Your website</span>
+			        </li>
+			        <li>
+		                <label for="message">Message:</label>
+		                <textarea name="message" cols="40" rows="6" required ></textarea>
+		            </li>
+			        <li>
+			        	<button class="submit"  type="submit">Submit Form</button>
+			        </li>
+		    	</ul>
+			</form>	
+		</div>
+		<div class="clear"></div>	
+
+		<div class="content_bootom">						
+			<div class="content1">				
+				<p style="padding-bottom: 45px;" class="text">
+					<a href="#"><img src="images/kiberpolicija.jpg" alt="" title="" class="lefting"/></a>
+					Органы власти выявили и прекратили деятельность незаконного хостинга, который обеспечивал непрерывную работу 67 фейковых "автосайтов". Об этом сообщает Департамент киберполиции Нацполиции Украины.
+				</p>
+			</div>
+			<div class="content1" >				
+				<p style="padding-bottom: 15px;">
+					<a href="#"><img src="images/viber.jpg" alt="" title="" class="lefting"/></a>
+					Функция секретных чатов полезна в тех случаях, когда необходимо предпринять дополнительные меры безопасности помимо шифрования. Компания Viber в рамках обновления до версии 6.7 представляет новую функцию секретных чатов со сквозным шифрованием текстовых сообщений и звонков.
+				</p>
+			</div>
+			<div class="content1  >				
+				<p>
+					<a href="#"><img src="images/startup.jpg" alt="" title="" class="lefting" style="color: #000;" /></a>
+					Чтобы снизить барьер для выхода на рынок стартапов и упростить создание новых компаний независимо от статуса и страны проживания, стартап-акселератор Y Combinator открывает Startup School с бесплатным обучением.
+					Лекции 10-недельного курса обучения будут размещаться один раз в неделю на сайте https://www.startupschool.org
+				</p>
+			</div>
+			<div class="content1 text" >				
+				<p>
+					<a href="#"><img src="images/wikileaks.jpg" alt="" title="" class="lefting"/></a>
+					Сайт Wikileaks выложил тысячи документов, которые, согласно авторам публикации, раскрывают хакерские приемы, к которым прибегает ЦРУ. В этих документах идет речь, в частности, о вирусах для компьютеров и смартфонов, а также о ПО, которое превращает "умные" телевизоры в прослушивающие устройства
+				</p>
+			</div>
+						
+		</div>
+		<div class="clear"></div>
+
+		<article id= "footer">
+			<a href="https://www.google.com.ua/?gfe_rd=cr&ei=k2H_V8vQDo-EtAGEu5ywDA&gws_rd=ssl" target="blank" style="padding-left: 60px;"><img src="images/google.png" alt="google" title="google" /></a>
+			<a href="https://uk-ua.facebook.com/" target="blank"><img src="images/faceboock.png" alt="faceboock" title="faceboock" /></a>				
+			<a href="https://mail.ru/" target="blank"><img src="images/mail.png" alt="mail" title="mail" /></a>
+			<a href="https://ok.ru/" target="blank"><img src="images/Odnoklasniki.png" alt="Odnoklasniki" title="Odnoklasniki" /></a>
+			<a href="https://twitter.com/?lang=ru" target="blank"><img src="images/twiter.png" alt="twiter" title="twiter" /></a>
+			<a href="https://en.wikipedia.org/wiki/Tribble" target="blank"><img src="images/triblle.PNG" alt="triblle" title="triblle" /></a>
+			<a href="http://vkontakte.ru/" target="blank"><img src="images/VK.png" alt="VK" title="VK" /></a>
+			<a href="https://www.yandex.ua/" target="blank"><img src="images/Яndex.png" alt="Яndex" title="Я"/></a>
+			<h6>Copyright &#169; 2017<span> JS-WorkHome7-8</span></h6>
+		</article>
+
+	  <script src="js/jquery.jcarousel.min.js"></script>
+
+	<script>
+        $(function () {
+            var jcarousel = $('.jcarousel');
+
+            jcarousel
+                    .on('jcarousel:reload jcarousel:create', function () {
+                        jcarousel.jcarousel('items').width(jcarousel.innerWidth());
+                    })
+                    .jcarousel({
+                        wrap: 'circular',
+                        transitions: Modernizr.csstransitions ? {
+                            transforms:   Modernizr.csstransforms,
+                            transforms3d: Modernizr.csstransforms3d,
+                            easing:       'ease'
+                        } : false
+                    });
+
+            $('.jcarousel-control-prev')
+                    .on('jcarouselcontrol:active', function() {
+                        $(this).removeClass('inactive');
+                    })
+                    .on('jcarouselcontrol:inactive', function() {
+                        $(this).addClass('inactive');
+                    })
+                    .jcarouselControl({
+                        target: '-=1'
+                    });
+
+            $('.jcarousel-control-next')
+                    .on('jcarouselcontrol:active', function() {
+                        $(this).removeClass('inactive');
+                    })
+                    .on('jcarouselcontrol:inactive', function() {
+                        $(this).addClass('inactive');
+                    })
+                    .on('click', function(e) {
+                        e.preventDefault();
+                    })
+                    .jcarouselControl({
+                        target: '+=1'
+                    });
+
+            $('.jcarousel-pagination')
+                    .on('jcarouselpagination:active', 'a', function() {
+                        $(this).addClass('active');
+                    })
+                    .on('jcarouselpagination:inactive', 'a', function() {
+                        $(this).removeClass('active');
+                    })
+                    .on('click', function(e) {
+                        e.preventDefault();
+                    })
+                    .jcarouselPagination({
+                        item: function(page) {
+                            return '<a href="#' + page + '">' + page + '</a>';
+                        }
+                    });
+        });
+    </script>
+
+     <script>
+		$(document).ready(function(){
+
+			//$("#section_last").css({display:'none'});
+
+			$("#section_first").hide({
+					effect: "drop",
+					//easing: "linear",
+					//times: 5,
+					duration: 2000
+					//effect: "drop",
+					//size: 1,
+					//duration: 2000
+			});
+
+			$("#section_last").show({
+					effect: "drop",
+					//easing: "liner",
+					//'direction': "up",
+					size: 40,
+					duration: 4000
+			});
+		});
+	</script>
+
+	<script>
+		//var text = document.getElementById("text");
+		var text = document.querySelector('#text');
+
+		function onchange_size(el) {
+        	text.style.fontSize = el.value + "px"
+        }
+	</script>
+
+	<script src="js/menu.js" type="text/javascript"></script>
+    <script src="js/cusel/cusel.js"></script>
+
+</body>
+</html>
